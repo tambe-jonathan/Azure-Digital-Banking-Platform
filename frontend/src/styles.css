@@ -1,0 +1,110 @@
+display: flex;
+  gap: 0.5rem;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+  padding-top: 1rem;
+}
+
+.account-meta span {
+  color: #c4d4e5;
+}
+
+.panel {
+  padding: 1.25rem;
+}
+
+.panel-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: collapse;
+  min-width: 620px;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid #e1e8ef;
+  padding: 0.85rem;
+  text-align: left;
+}
+
+th {
+  color: #4c5d70;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+}
+
+.status {
+  border-radius: 999px;
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 800;
+  padding: 0.3rem 0.65rem;
+  text-transform: capitalize;
+}
+
+.status.credit {
+  background: #dff5ea;
+  color: #0c6b58;
+}
+
+.status.debit {
+  background: #ffe8d5;
+  color: #9c4f12;
+}
+
+.error,
+.success,
+.loading,
+.empty-state {
+  border-radius: 8px;
+  margin: 0;
+  padding: 0.75rem;
+}
+
+.error {
+  background: #ffe7e7;
+  color: #9f1d1d;
+}
+
+.success {
+  background: #ddf7e9;
+  color: #11653e;
+}
+
+.loading,
+.empty-state {
+  background: #eef3f8;
+  color: #4c5d70;
+}
+
+.transfer-panel {
+  max-width: 520px;
+}
+
+@media (max-width: 680px) {
+  .navbar,
+  .account-meta {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navlinks {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .navlinks a,
+  .navlinks button {
+    flex: 1 1 auto;
+  }
+}
